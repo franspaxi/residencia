@@ -1,5 +1,8 @@
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%-- 
+    Document   : mainPersona
+    Created on : 29-nov-2018, 21:48:36
+    Author     : TOSHIBA
+--%>
 
 <script src='/webjars/AdminLTE/2.4.2/bower_components/jquery/dist/jquery.min.js'></script>
 <link rel="stylesheet" href="/resources/css/jquery.dataTables.min.css">
@@ -14,7 +17,7 @@
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
       <li class="active">Here</li>
-      <li class="active"><a href="/pers" class="btn btn-warning">Ir Persona</a></li>
+      <li class="active"><a  class="btn btn-warning">Ir Persona</a></li>
     </ol>
   </section>
 
@@ -30,7 +33,7 @@
     <br/>
           <div class="box">
           <div class="box-body">
-            <form action="${pageContext.request.contextPath}/buscar" method="POST">
+            <form action="${pageContext.request.contextPath}/buscarPer" method="POST">
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">Nombre:</label>
@@ -56,23 +59,27 @@
         <table id="example1" class="table table-bordered table-striped">
           <thead >
             <tr>
-              <th >#</th>
               <th >Nombre</th>
-              <th >Apell. Paterno</th>
-              <th >DNI</th>
+              <th >Apellido</th>
+              <th >Telefono</th>
+              <th >Nombre Familiar</th>
+              <th >Numero Familiar</th>
+              <th >Email</th>
               <th >Opciones</th>
             </tr>
           </thead>
           <tbody>
                 <c:forEach items="${ListaPersona}" var="dato">
                       <tr>
-                        <th >1</th>
                         <td>${dato.nombre}</td>
-                        <td>${dato.apellPaterno}</td>
-                        <td>${dato.dni}</td>
+                        <td>${dato.apellido}</td>
+                        <td>${dato.telefono}</td>
+                        <td>${dato.nombreFamiliar}</td>
+                        <td>${dato.numeroFamiliar}</td>
+                        <td>${dato.email}</td>
                         <td align="center">
-                            <a href="${pageContext.request.contextPath}/elim?id=${dato.idPersona}" ><span title="Eliminar" class="glyphicon glyphicon-remove"></span></a>
-                            <a href="${pageContext.request.contextPath}/formModif2Persona?id=${dato.idPersona}" ><span title="Editar" class="glyphicon glyphicon-edit"></span></a>
+                            <a href="${pageContext.request.contextPath}/elimper?id=${dato.idpersona}" ><span title="Eliminar" class="glyphicon glyphicon-remove"></span></a>
+                            <a href="${pageContext.request.contextPath}/formModif2Persona?id=${dato.idpersona}" ><span title="Editar" class="glyphicon glyphicon-edit"></span></a>
                         
                         </td>
                       </tr>
@@ -80,11 +87,13 @@
             </tbody>
             <tfoot>
                 <tr>
-                <th >#</th>
-                <th >Nombre</th>
-                <th >Apell. Paterno</th>
-                <th >DNI</th>
-                <th >Opciones</th>
+              <th >Nombre</th>
+              <th >Apellido</th>
+              <th >Telefono</th>
+              <th >Nombre Familiar</th>
+              <th >Numero Familiar</th>
+              <th >Email</th>
+              <th >Opciones</th>
                 </tr>
             </tfoot>            
           </table>  

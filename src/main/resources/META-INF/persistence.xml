@@ -60,6 +60,25 @@
     <class>pe.com.syscenterlife.modelo.GloCargo</class>
     <class>pe.com.syscenterlife.modelo.CompTipoProveedor</class>
     <class>pe.com.syscenterlife.modelo.CompProveedores</class>
+    <class>pe.upeu.residencia.modelo.PersonaHabitacion</class>
+    <class>pe.upeu.residencia.modelo.Periodo</class>
+    <class>pe.upeu.residencia.modelo.CobroDetalle</class>
+    <class>pe.upeu.residencia.modelo.Usuario</class>
+    <class>pe.upeu.residencia.modelo.AperturaPeriodo</class>
+    <class>pe.upeu.residencia.modelo.CobroAlquiler</class>
+    <class>pe.upeu.residencia.modelo.Persona</class>
+    <class>pe.upeu.residencia.modelo.Habitaciones</class>
+    <class>pe.upeu.residencia.modelo.VentServicio</class>
+    <class>pe.upeu.residencia.modelo.VentDetalleServicio</class>
+    <class>pe.upeu.residencia.modelo.Servicio</class>
+    <class>pe.upeu.residencia.modelo.Cargo</class>
+    <class>pe.upeu.residencia.modelo.Cobro</class>
+    <class>pe.upeu.residencia.modelo.SysAccesosPerfiles</class>
+    <class>pe.upeu.residencia.modelo.SysGrupo</class>
+    <class>pe.upeu.residencia.modelo.SysAccesos</class>
+    <class>pe.upeu.residencia.modelo.SysPerfiles</class>
+    <class>pe.upeu.residencia.modelo.SysPrivilegios</class>
+    <class>pe.upeu.residencia.modelo.SysMenu</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sysventas?zeroDateTimeBehavior=convertToNull"/>

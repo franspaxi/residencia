@@ -6,7 +6,7 @@
 
     </section>    
     <section class="content">                     
-        <h1><spring:message code="welcome.tituloprincipal" arguments="SysVentas" /></h1>                
+        <h1><spring:message code="welcome.tituloprincipal" arguments="Residencia" /></h1>                
     </section>
 
 </div>

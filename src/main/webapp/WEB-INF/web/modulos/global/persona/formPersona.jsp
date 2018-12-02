@@ -1,7 +1,7 @@
 <%-- 
     Document   : formPersona
-    Created on : 03/10/2018, 11:47:27 AM
-    Author     : LAB_SOFTWARE-DTI
+    Created on : 29-nov-2018, 21:48:21
+    Author     : TOSHIBA
 --%>
 
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
@@ -21,70 +21,47 @@
   
             <div class="box-body">
                 <div class="form-group">
-                    <frm:hidden path="idPersona" />
-                    <frm:label path="nombre" class="col-sm-2 control-label" >Primer Nombre:</frm:label>
+                    <frm:hidden path="idpersona" />
+                    <frm:label path="nombre" class="col-sm-2 control-label" >Nombre:</frm:label>
                     <div class="col-sm-10">
                     <frm:input path="nombre" class="form-control" />
                     </div>
                 </div>
                 <div class="form-group">                    
-                    <frm:label path="nombre2" class="col-sm-2 control-label" >Segundo Nombre:</frm:label>
+                    <frm:label path="apellido" class="col-sm-2 control-label" >Apellido</frm:label>
                     <div class="col-sm-10">
-                    <frm:input path="nombre2" class="form-control" />
+                    <frm:input path="apellido" class="form-control" />
                     </div>
-                </div>
-                <div class="form-group">
-                    <frm:label path="apellPaterno" class="col-sm-2 control-label">Apell. Paterno:</frm:label>
-                    <div class="col-sm-10"><frm:input path="apellPaterno" class="form-control"  /></div>                    
-                </div>
-                <div class="form-group">
-                    <frm:label path="apellMaterno" class="col-sm-2 control-label">Apell. Materno:</frm:label>
-                    <div class="col-sm-10"><frm:input path="apellMaterno" class="form-control"  /></div>                    
                 </div>
                 <div class="form-group">
                     <frm:label path="dni" class="col-sm-2 control-label">DNI:</frm:label>
                     <div class="col-sm-10"><frm:input path="dni" class="form-control" /></div>
+                </div>
+                <div class="form-group">
+                    <frm:label path="telefono" class="col-sm-2 control-label">Telefono:</frm:label>
+                    <div class="col-sm-10"><frm:input path="telefono" class="form-control" /></div>
                 </div>
                 <div class="form-group ">
                     <frm:label path="fechaNacimiento" class="col-sm-2 control-label">F.Nacimiento:</frm:label>
                     <div class="col-sm-10" >
                     <frm:input path="fechaNacimiento"  class="form-control" id="datepicker" placeholder="yyyy/mm/dd" />
                     </div>
-                </div>
-                   
+                </div> 
                 <div class="form-group" >
-                    <frm:label path="sexo" class="col-sm-2 control-label">Sexo:</frm:label>
-                    <div class="col-sm-10">
-                    <frm:select path="sexo" class="form-control select2" style="width: 100%;">
-                        <frm:options items="${ListGenero}" />
-                    </frm:select></div>
+                    <frm:label path="nombreFamiliar" class="col-sm-2 control-label">Nombre Familiar:</frm:label>
+                    <div class="col-sm-10"><frm:input path="nombreFamiliar" class="form-control" /></div>
                 </div>
                 <div class="form-group" >
-                    <frm:label path="celular" class="col-sm-2 control-label">Celular:</frm:label>
-                    <div class="col-sm-10"><frm:input path="celular" class="form-control" /></div>
+                    <frm:label path="numeroFamiliar" class="col-sm-2 control-label">Numero Familiar:</frm:label>
+                    <div class="col-sm-10"><frm:input path="numeroFamiliar" class="form-control" /></div>
                 </div>
                 <div class="form-group" >
-                    <frm:label path="direccion" class="col-sm-2 control-label">Dirección:</frm:label>
-                    <div class="col-sm-10"><frm:input path="direccion" class="form-control" /></div>
-                </div>
-                <div class="form-group" >
-                    <frm:label path="idioma" class="col-sm-2 control-label">Idioma:</frm:label>
-                    <div class="col-sm-10">
-                    <frm:select path="idioma" class="form-control select2" style="width: 100%;">
-                        <frm:options items="${ListIdioma}" />
-                    </frm:select></div>
+                    <frm:label path="religion" class="col-sm-2 control-label">Religion:</frm:label>
+                    <div class="col-sm-10"><frm:input path="religion" class="form-control" /></div>
                 </div>
                 <div class="form-group" >
                   <frm:label path="email" class="col-sm-2 control-label">Email address</frm:label>
                   <div class="col-sm-10"><frm:input path="email" class="form-control" id="email" placeholder="Enter email" /></div>
-                </div>
-                <div class="form-group" >
-                    <frm:label path="usuario" class="col-sm-2 control-label">Usuario:</frm:label>
-                    <div class="col-sm-10"><frm:input path="usuario" class="form-control" /></div>
-                </div>
-                <div class="form-group" >
-                    <frm:label path="clave" class="col-sm-2 control-label">Password:</frm:label>
-                    <div class="col-sm-10"><frm:password path="clave" class="form-control" /></div>
                 </div>
               </div>
               <!-- /.box-body -->
@@ -116,4 +93,3 @@
     });
 </script>     
 </div> 
-  

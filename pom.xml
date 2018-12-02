@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pe.com.syscenterlife</groupId>
-	<artifactId>SysVentasJSTL</artifactId>
+	<artifactId>Residencia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>SysVentasJSTL</name>
+	<name>Residencia</name>
 	<description>SysVentasJSTL project for Spring Boot</description>
 
 	<parent>

@@ -32,13 +32,18 @@
             </span>
           </a>
           <ul class="treeview-menu">
-                    <li class="active"><a href="${pageContext.request.contextPath}/perMain"><i class="fa fa-circle-o"></i> Persona</a></li>                                        
-                    <li ><a href="${pageContext.request.contextPath}/provMain"><i class="fa fa-circle-o"></i> Proveedor</a></li>
-                    <li ><a href="${pageContext.request.contextPath}/almMain"><i class="fa fa-circle-o"></i> Almacenamiento</a></li>
-                    <li ><a href="${pageContext.request.contextPath}/pru1"><i class="fa fa-circle-o"></i> Prueba1</a></li>
-                    <li ><a href="${pageContext.request.contextPath}/pru2"><i class="fa fa-circle-o"></i> Prueba2</a></li>
-                    <li ><a href="${pageContext.request.contextPath}/pers"><i class="fa fa-circle-o"></i> Persona Main</a></li>
-                    <li ><a href="${pageContext.request.contextPath}/report"><i class="fa fa-circle-o"></i> Persona Reporte</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/perMain"><i class="fa fa-circle-o"></i> Persona</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/usuarMain"><i class="fa fa-circle-o"></i> Usuario</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/habiMain"><i class="fa fa-circle-o"></i> Habitaciones</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/cobrMain"><i class="fa fa-circle-o"></i> Cobro</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/cobralMain"><i class="fa fa-circle-o"></i> Cobro Alquiler</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/apertMain"><i class="fa fa-circle-o"></i> Apertura Periodo</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/perioMain"><i class="fa fa-circle-o"></i> Periodo</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/codetMain"><i class="fa fa-circle-o"></i> Cobro Detalle</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/ventserMain"><i class="fa fa-circle-o"></i> Venta Servicio</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/ventdetallMain"><i class="fa fa-circle-o"></i> Venta Detalle Servicio</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/servMain"><i class="fa fa-circle-o"></i> Servicio</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/carMain"><i class="fa fa-circle-o"></i> Cargo</a></li>
           </ul>
         </li>
         <li class="treeview">
